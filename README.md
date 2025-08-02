@@ -1,0 +1,15 @@
+# 🧩 Flux
+
+# Architecture of Flux
+
+Flux is an architectural specification for byte stream processing with semantic
+error signaling. It defines core abstractions like BytesStream and the Buzz
+exception taxonomy, to be reused across language frontends and data parsers.
+
+## Diagrams
+
+- [Class](docs/uml/class/bytes_stream.puml) -
+  [🏄‍♂️ puml](https://editor.plantuml.com/uml/bLF1Re904BtlLqmzOL8QDJsPO8oDPqmDlJGzhEoecy12rXN4fl_UMR0D2pIf5qYOzsRUUpCiJuPhSquJM5K6Jx0r6ddA7imHKuGyuL8nncEJQH1OC9OJMiOovyh0gAOqZ17m4wosdVhvUbsdkQasl4eoBXhGUjD7DKt20lK-oSfRi_0lNAI40umO2m9uePAHwW0jMU0LF942yaR068A0aG_m5qI3UHlwf7dfAInXHz_UFpudb-Vf8z1pzZMs2SY26xGMYUWJtxQPWrGKe8eHOZiT1NLlOwskjre1bKLtEZVUPEpsirDhrgl5xx3Ab01KGzHPNvOjXbGrHvsLq0_MSoWXisY_Phagy19ZRcIcN3lXWBl1r4jfZe1syp_9tn7yGDmBUpMEh_PPEQxekYps_ww8q7TrIt-VQQJNGIfbBVPtu4-7bn0DBE7tQjqjHCp2xzX2rDMxfFkWFvXz0m00)
+
+- [Sequence](docs/uml/sequence/bytes_stream.puml) -
+  [👀 puml](https://editor.plantuml.com/uml/bLF1Re904BtlLqmzOL8QDJsPO8oDXvuqDVJIzB2oesu22rbN49l-UsUWRK1eKY-GCE_DlFTcc1-TjEwKnB0e7HvXuopAHDov0oO8MIor4K96BhMWC1SY8xIET2QDWq55gHa3a4TutbpLJvVBCibSkPPbd4fLWHRBTHTLDrdbQ7TnMjIupUelN6XK2nWA4GJmH2MdpHuQii3BPQmLPBM08GI181_WpqWiJ9lG1oiBps01M_hszlunEZ-Exu6UayyX9w1pwP0j4j4dFhUPWZOKe8aG8fwEYhetiQphjL90PNKzNJflD6ptuwaLwuNnMonJem1D7tNIbJNZrAZg3ZOje1kirw1mlepsgvPj5NYEC7CwDKqxJEYwwqszqEu0o9l_IVw6u7lYdl7Lj7mrpwhbYgwBiVztHOIkg-_qTwb5UksrCMonkmD_tB-4i6S9lrVRta8e67x35i9hlNEw3_g3lm00)
