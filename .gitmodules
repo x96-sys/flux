@@ -1,0 +1,3 @@
+[submodule "implementations/c/flux.c"]
+	path = implementations/c/flux.c
+	url = git@github.com:x96-sys/flux.c.git

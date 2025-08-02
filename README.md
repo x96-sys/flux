@@ -1,6 +1,6 @@
 # 🧩 Flux
 
-# Architecture of Flux
+## Architecture
 
 Flux is an architectural specification for byte stream processing with semantic
 error signaling. It defines core abstractions like BytesStream and the Buzz
