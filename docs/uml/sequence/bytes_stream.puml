@@ -1,0 +1,51 @@
+@startuml Bytes Stream
+!theme plain
+
+actor dev
+
+participant "BytesStream" as BS
+participant "BuzzEmptyPayload" as BEP
+participant "BuzzStreamOverflow" as BSO
+participant "BuzzStreamUnderflow" as BSU
+
+== Creating BytesStream (valid payload) ==
+dev -> BS : BytesStream.raw(new byte[]{0x41, 0x42})
+activate BS
+BS --> dev : instance created
+deactivate BS
+
+== Valid read ==
+dev -> BS : at(0)
+BS --> dev : 0x41
+
+== Read beyond end ==
+dev -> BS : at(2)
+activate BS
+BS -> BSO : throw BuzzStreamOverflow()
+activate BSO
+BSO --> BS
+BS --> dev : exception
+deactivate BSO
+deactivate BS
+
+== Creating BytesStream with empty payload ==
+dev -> BS : BytesStream.raw(new byte[]{})
+activate BS
+BS -> BEP : throw BuzzEmptyPayload()
+activate BEP
+BEP --> BS
+BS --> dev : exception
+deactivate BEP
+deactivate BS
+
+== Read before beginning ==
+dev -> BS : at(-1)
+activate BS
+BS -> BSU : throw BuzzStreamUnderflow()
+activate BSU
+BSU --> BS
+BS --> dev : exception
+deactivate BSU
+deactivate BS
+
+@enduml
